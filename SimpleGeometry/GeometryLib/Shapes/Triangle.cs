@@ -26,5 +26,15 @@ namespace GeometryLib.Shapes
             Side2 = side2;
             Side3 = side3;
         }
+
+        public override string Print(Shape shape)
+        {
+            var rightTriangle = (RightAngledTriangle)shape;
+            var area = 0.5 * rightTriangle.Side1 * rightTriangle.Side2;
+            var info = "Right-angled Triangle: ";
+            info += $"sides {rightTriangle.Side1} {rightTriangle.Side2} {rightTriangle.Side3}, ";
+            info += $"area = {area}";
+            return info;
+        }
     }
 }

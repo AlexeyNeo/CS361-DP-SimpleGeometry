@@ -15,6 +15,11 @@ namespace GeometryLib.Shapes
         public RightAngledTriangle(double side1, double side2) 
             : base(side1, side2, Math.Sqrt(side1 * side1 + side2 * side2))
         {
+
+        }
+        public override string Print(Shape shape)
+        {
+            return base.Print(shape);
         }
     }
 }

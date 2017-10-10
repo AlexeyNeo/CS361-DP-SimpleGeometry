@@ -12,13 +12,14 @@ namespace SimpleGeometry
     {
         static void Main(string[] args)
         {
-            List<Shape> shapes = new List<Shape>();
+            List<Iprint> shapes = new List<Iprint>();
             shapes.Add(new Circle(1));
             shapes.Add(new Triangle(6, 5, 4));
             shapes.Add(new RightAngledTriangle(3, 4));
+            ShapePrinter st = new ShapePrinter();
 
             foreach (Shape shape in shapes)
-                ShapePrinter.Print(shape);
+                st.PrintS(shape);
 
             Console.WriteLine("Для завершения нажмите любую клавишу...");
             Console.ReadKey();

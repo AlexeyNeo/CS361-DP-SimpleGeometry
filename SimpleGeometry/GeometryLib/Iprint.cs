@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GeometryLib
 {
-    interface Iprint
+public    interface Iprint
     {
         string Print(Shape shape);
     }

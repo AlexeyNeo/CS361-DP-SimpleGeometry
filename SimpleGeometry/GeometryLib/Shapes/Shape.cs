@@ -11,6 +11,6 @@ namespace GeometryLib.Shapes
     /// </summary>
     public abstract class Shape : Iprint
     {
-        public abstract string Print(Shape shape);
+        public abstract string Print();
     }
 }

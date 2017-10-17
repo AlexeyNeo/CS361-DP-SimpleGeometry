@@ -27,12 +27,12 @@ namespace GeometryLib.Shapes
             Side3 = side3;
         }
 
-        public override string Print(Shape shape)
+        public override string Print()
         {
-            var rightTriangle = (RightAngledTriangle)shape;
-            var area = 0.5 * rightTriangle.Side1 * rightTriangle.Side2;
+           // var rightTriangle = (RightAngledTriangle)shape;
+            var area = 0.5 * Side1 * Side2;
             var info = "Right-angled Triangle: ";
-            info += $"sides {rightTriangle.Side1} {rightTriangle.Side2} {rightTriangle.Side3}, ";
+            info += $"sides {Side1} {Side2} {Side3}, ";
             info += $"area = {area}";
             return info;
         }

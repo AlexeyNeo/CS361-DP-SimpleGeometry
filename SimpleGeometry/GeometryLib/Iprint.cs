@@ -9,6 +9,6 @@ namespace GeometryLib
 {
 public    interface Iprint
     {
-        string Print(Shape shape);
+        string Print();
     }
 }

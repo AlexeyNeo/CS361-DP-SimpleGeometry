@@ -20,11 +20,11 @@ namespace GeometryLib.Shapes
             Radius = radius;
         }
 
-        public override string Print(Shape shape)
+        public override string Print()
         {
-            var circle = (Circle)shape;
-           var  area = circle.Radius * circle.Radius * Math.PI;
-            return ($"Circle: radius = {circle.Radius}, area = {area}");
+            
+           var  area = Radius * Radius * Math.PI;
+            return ($"Circle: radius = {Radius}, area = {area}");
         }
     }
 }

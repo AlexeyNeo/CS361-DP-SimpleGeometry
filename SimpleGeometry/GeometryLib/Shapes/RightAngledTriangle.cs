@@ -17,9 +17,9 @@ namespace GeometryLib.Shapes
         {
 
         }
-        public override string Print(Shape shape)
+        public override string Print()
         {
-            return base.Print(shape);
+            return base.Print();
         }
     }
 }
